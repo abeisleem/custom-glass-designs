@@ -1,0 +1,28 @@
+<!--TODO: implement location / information over http(s) response due to security and for practice-->
+<!--https://developers.google.com/maps/documentation/maps-static/dev-guide-->
+
+
+<div id="googleMap" style="height:500px;"></div>
+
+<script>
+    function myMap() {
+        myCenter=new google.maps.LatLng(29.136335, -80.990528);
+        var mapOptions= {
+            center:myCenter,
+            zoom:13,
+            draggable: true,
+            streetViewControl: false,
+            gestureHandling: 'cooperative',
+            mapTypeId:google.maps.MapTypeId.ROADMAP
+        };
+        var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+        var marker = new google.maps.Marker({
+            position: myCenter
+        });
+        marker.setMap(map);
+
+    }
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=<%=API_KEY%>&callback=myMap" type="text/javascript"></script>

@@ -1,0 +1,29 @@
+{
+  "name": "custom-glass-designs",
+  "author": "Abe Isleem",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "devstart": "nodemon ./bin/www",
+    "lint": "eslint src/js"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "csurf": "^1.9.0",
+    "debug": "~2.6.9",
+    "ejs": "~2.5.7",
+    "express": "~4.16.0",
+    "express-flash": "0.0.2",
+    "express-session": "^1.15.6",
+    "express-validator": "^5.2.0",
+    "helmet": "^3.12.1",
+    "http-errors": "~1.6.2",
+    "morgan": "~1.9.0",
+    "nodemailer": "^4.6.6"
+  },
+  "devDependencies": {
+    "ejs-lint": "^0.3.0",
+    "nodemon": "^1.17.5"
+  }
+}
